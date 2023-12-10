@@ -1,0 +1,333 @@
+{
+   "HTML": [
+        {
+            "question": "What does HTML stand for?",
+            "choice1": "Hyper Text Markup Language",
+            "choice2": "Hyperlinks and Text Markup Language",
+            "choice3": "Home Tool Markup Language",
+            "choice4": "Hyper Tool Markup Language",
+            "answer": 1
+        },
+        {
+            "question": "Which HTML tag is used to define an unordered list?",
+            "choice1": "&lt;list&gt;",
+            "choice2": "&lt;ul&gt;",
+            "choice3": "&lt;ol&gt;",
+            "choice4": "&lt;dl&gt;",
+            "answer": 2
+        },
+        {
+            "question": "What is the correct HTML for adding a background color?",
+            "choice1": "&lt;background&gt;yellow&lt;/background&gt;",
+            "choice2": "&lt;body bg='yellow'&gt;",
+            "choice3": "&lt;body style='background-color:yellow'&gt;",
+            "choice4": "&lt;bgcolor=yellow&gt;",
+            "answer": 3
+        },
+        {
+            "question": "What does the &lt;aside&gt; tag define in HTML5?",
+            "choice1": "A footer for the document",
+            "choice2": "A navigation section",
+            "choice3": "Content aside from the page content",
+            "choice4": "An article",
+            "answer": 3
+        },
+        {
+            "question": "Which input type is used for a single-line text input field?",
+            "choice1": "text",
+            "choice2": "textbox",
+            "choice3": "input",
+            "choice4": "line",
+            "answer": 1
+        },
+        {
+            "question": "What is the correct HTML for creating a hyperlink?",
+            "choice1": "&lt;a href='http://www.example.com'&gt;Example&lt;/a&gt;",
+            "choice2": "&lt;link>http://www.example.com&lt;/link&gt;",
+            "choice3": "&lt;a name='http://www.example.com'&gt;Example&lt;/a&gt;",
+            "choice4": "&lt;a url='http://www.example.com'&gt;Example&lt;/a&gt;",
+            "answer": 1
+        },
+        {
+            "question": "Which HTML tag is used to define the footer of a document or section?",
+            "choice1": "&lt;footer&gt;",
+            "choice2": "&lt;bottom&gt;",
+            "choice3": "&lt;end&gt;",
+            "choice4": "&lt;foot&gt;",
+            "answer": 1
+        },
+        {
+            "question": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+            "choice1": "alt",
+            "choice2": "title",
+            "choice3": "src",
+            "choice4": "href",
+            "answer": 1
+        },
+        {
+            "question": "Which HTML element is used to specify a header for a document or section?",
+            "choice1": "&lt;header&gt;",
+            "choice2": "&lt;top&gt;",
+            "choice3": "&lt;head&gt;",
+            "choice4": "&lt;heading&gt;",
+            "answer": 1
+        },
+        {
+            "question": "Which HTML element is used to define a hyperlink?",
+            "choice1": "&lt;link&gt;",
+            "choice2": "&lt;a&gt;",
+            "choice3": "&lt;ref&gt;",
+            "choice4": "&lt;hyperlink&gt;",
+            "answer": 2
+        }
+    ],
+   "JavaScript": [
+        {
+            "question": "What is JavaScript?",
+            "choice1": "A server-side scripting language",
+            "choice2": "A markup language",
+            "choice3": "A programming language",
+            "choice4": "A database language",
+            "answer": 3
+        },
+        {
+            "question": "Which operator is used to assign a value to a variable?",
+            "choice1": "=",
+            "choice2": "==",
+            "choice3": ":=",
+            "choice4": "===",
+            "answer": 1
+        },
+        {
+            "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+            "choice1": "&lt;script src='script.js'&gt;",
+            "choice2": "&lt;script name='script.js'&gt;",
+            "choice3": "&lt;script href='script.js'&gt;",
+            "choice4": "&lt;script link='script.js'&gt;",
+            "answer": 1
+        },
+        {
+            "question": "Which method is used to add a new item to the end of an array?",
+            "choice1": "push()",
+            "choice2": "append()",
+            "choice3": "addToEnd()",
+            "choice4": "insertEnd()",
+            "answer": 1
+        },
+        {
+            "question": "What does 'DOM' stand for in JavaScript?",
+            "choice1": "Document Object Model",
+            "choice2": "Document Oriented Markup",
+            "choice3": "Data Object Model",
+            "choice4": "Document Object Method",
+            "answer": 1
+        },
+        {
+            "question": "Which function is used to print something in the console?",
+            "choice1": "print()",
+            "choice2": "console.print()",
+            "choice3": "log()",
+            "choice4": "display()",
+            "answer": 3
+        },
+        {
+            "question": "What is the JavaScript syntax for printing 'Hello World'?",
+            "choice1": "console.log('Hello World');",
+            "choice2": "print('Hello World');",
+            "choice3": "System.out.println('Hello World');",
+            "choice4": "echo('Hello World');",
+            "answer": 1
+        },
+        {
+            "question": "Which keyword is used to declare a variable in JavaScript?",
+            "choice1": "var",
+            "choice2": "int",
+            "choice3": "variable",
+            "choice4": "declare",
+            "answer": 1
+        },
+        {
+            "question": "What is the purpose of 'typeof' operator in JavaScript?",
+            "choice1": "To find the type of a variable or expression",
+            "choice2": "To define a new variable type",
+            "choice3": "To compare variable values",
+            "choice4": "To assign a value to a variable",
+            "answer": 1
+        },
+        {
+            "question": "What does 'NaN' stand for in JavaScript?",
+            "choice1": "Not a Node",
+            "choice2": "Null or Negative",
+            "choice3": "Not a Number",
+            "choice4": "None of the above",
+            "answer": 3
+        }
+    ],
+
+    "CSS" : [
+        {
+            "question": "What does CSS stand for?",
+            "choice1": "Computer Style Sheets",
+            "choice2": "Creative Style Sheets",
+            "choice3": "Cascading Style Sheets",
+            "choice4": "Colorful Style Sheets",
+            "answer": 3
+        },
+        {
+            "question": "Which CSS property is used to change the text color of an element?",
+            "choice1": "text-color",
+            "choice2": "color",
+            "choice3": "font-color",
+            "choice4": "text-style",
+            "answer": 2
+        },
+        {
+            "question": "Which CSS property is used to change the background color of an element?",
+            "choice1": "bgcolor",
+            "choice2": "background-color",
+            "choice3": "color-background",
+            "choice4": "bg-color",
+            "answer": 2
+        },
+        {
+            "question": "Which CSS property is used to set the font size of text?",
+            "choice1": "text-size",
+            "choice2": "font-size",
+            "choice3": "text-font",
+            "choice4": "size-font",
+            "answer": 2
+        },
+        {
+            "question": "What is the correct CSS syntax for making all the <p> elements bold?",
+            "choice1": "p {font-weight: bold;}",
+            "choice2": "p {text-style: bold;}",
+            "choice3": "p {bold: true;}",
+            "choice4": "p {make-bold: true;}",
+            "answer": 1
+        },
+        {
+            "question": "Which CSS property is used to create space between the element's border and inner content?",
+            "choice1": "padding",
+            "choice2": "spacing",
+            "choice3": "margin",
+            "choice4": "border-space",
+            "answer": 1
+        },
+        {
+            "question": "What does 'Cascading' refer to in Cascading Style Sheets?",
+            "choice1": "Referring to multiple stylesheets being applied to an element",
+            "choice2": "Referring to the hierarchical structure of HTML",
+            "choice3": "Referring to the way styles override each other",
+            "choice4": "Referring to animations applied to styles",
+            "answer": 3
+        },
+        {
+            "question": "Which CSS property is used to control the element's positioning?",
+            "choice1": "position",
+            "choice2":"display",
+            "choice3":"float",
+            "choice4":"margin",
+            "answer":1
+        },
+        {
+            "question":"Which CSS display property is used to to hide the content from Screen?",
+            "choice1":"none",
+            "choice2":"block",
+            "choice3":"hidden",
+            "choice4":"inline-none",
+            "answer":1
+        },
+        {
+            "question":"Whihc CSS tag makes a normal text to link",
+            "choice1":"&lt;a&gt;&lt;/a&gt;",
+            "choice2":"&lt;b&gt;&lt;/b&gt;",
+            "choice3":"&lt;link&gt;&lt;/link&gt;",
+            "choice4":"&lt;https&gt;&lt;/https&gt;",
+            "answer":1
+        }
+    ],
+
+        "Accessibility": [
+            {
+                "question": "What does 'WCAG' stand for in web accessibility?",
+                "choice1": "Web Content Accessibility Guidelines",
+                "choice2": "Worldwide Communication Accessibility Group",
+                "choice3": "Website Coding Accessibility Group",
+                "choice4": "Web Compliance Accessibility Guidelines",
+                "answer": 1
+            },
+            {
+                "question": "What does ARIA (Accessible Rich Internet Applications) help with in web development?",
+                "choice1": "Styling web pages",
+                "choice2": "Creating interactive forms",
+                "choice3": "Improving website performance",
+                "choice4": "Enhancing accessibility for screen readers",
+                "answer": 4
+            },
+            {
+                "question": "What is the purpose of alt text in HTML images for accessibility?",
+                "choice1": "To describe the image visually",
+                "choice2": "To display image metadata",
+                "choice3": "To hide the image from screen readers",
+                "choice4": "To provide a text alternative for screen readers",
+                "answer": 4
+            },
+            {
+                "question": "Which HTML element defines the structure of a web document?",
+                "choice1": "&lt;div&gt;",
+                "choice2": "&lt;span&gt;",
+                "choice3": "&lt;section&gt;",
+                "choice4": "&lt;header&gt;",
+                "answer": 3
+            },
+            {
+                "question": "What is the purpose of semantic HTML elements in web accessibility?",
+                "choice1": "To add decorative elements to a webpage",
+                "choice2": "To provide meaning and structure to content",
+                "choice3": "To style the webpage layout",
+                "choice4": "To block certain content from screen readers",
+                "answer": 2
+            },
+            {
+                "question": "What does 'keyboard accessibility' refer to in web development?",
+                "choice1": "Creating visually appealing keyboards",
+                "choice2": "Making websites accessible via keyboard navigation",
+                "choice3": "Restricting access to keyboard users",
+                "choice4": "Developing software for hardware keyboards only",
+                "answer": 2
+            },
+            {
+                "question": "What is the purpose of skip navigation links in web accessibility?",
+                "choice1": "To navigate to the top of a webpage",
+                "choice2": "To skip past repeated content and directly access main content",
+                "choice3": "To hide certain navigation links",
+                "choice4": "To navigate to external webpages",
+                "answer": 2
+            },
+            {
+                "question": "What is the recommended color contrast ratio for text and its background for better readability?",
+                "choice1": "3:1",
+                "choice2": "5:1",
+                "choice3": "7:1",
+                "choice4": "10:1",
+                "answer": 2
+            },
+            {
+                "question": "What does 'focus management' involve in web accessibility?",
+                "choice1": "Directing user focus on particular elements",
+                "choice2": "Limiting the focus area of a webpage",
+                "choice3": "Removing focus from interactive elements",
+                "choice4": "Making the webpage less engaging",
+                "answer": 1
+            },
+            {
+                "question": "Why is providing text alternatives for non-text content important in web accessibility?",
+                "choice1": "To replace non-text content with text",
+                "choice2": "To improve website performance",
+                "choice3": "To ensure content is accessible to people with disabilities",
+                "choice4": "To reduce the size of webpages",
+                "answer": 3
+            }
+    ]
+    
+}
