@@ -97,7 +97,7 @@ function showQuestion(data){
  // console.log();
   numbers = `Question ${counter +1} of ${data[x].length}`;
   console.log(numbers);
-    if (counter >= data[x].length - 1) {
+    if (counter >= data[x].length) {
        
                counter = 0;
                showCorrectAnswers();
