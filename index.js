@@ -17,28 +17,23 @@ let clickedSubject = document.getElementById("clickedsubject")
 let counter = 0 ;
 let section = document.querySelector("section")
 let sliderContainer = document.querySelector(".slide-container")
-
+const numberofQuestion = document.getElementById("numberof-question");
 
 sliderContainer.addEventListener("click",shiftSlider);
 let slider = document.querySelector(".inner-slider");
 
 function shiftSlider() {
-    console.log("her")
-    let currentLeft = parseInt(slider.style.left) || 0;
 
     if (!slider.classList.contains("sliderRight")) {
         slider.classList.add("sliderRight");
         darkMode();
         localStorage.setItem("theme","dark-mode")
-        console.log(slider);
     } else {
         slider.classList.remove("sliderRight");
-        console.log(slider);
         localStorage.setItem("theme","")
 
         lightMode();
     }
-    //darkAndLightTheme();
 }
 
 
@@ -64,6 +59,7 @@ if (setTheme === "dark-mode") {
 
     lightMode();
 }
+
 function darkAndLightTheme(){
 localStorage.getItem("theme",darkMode());
 }
@@ -73,6 +69,7 @@ subjects.forEach(subject => {
 })
 
 let x ="" ;
+let numbers = '';
 
 function getSelectedSubject(){
     selectSubContainer.style.display = "none";
@@ -83,6 +80,7 @@ function getSelectedSubject(){
    clickedSubject.innerHTML = x;
    document.getElementById("pick-text").style.display = 'none';
    progressContainer.style.display = "block";
+
    console.log(imgSrc);
    subjectIcon.src = imgSrc.src;
    subjectIcon.classList.add(imgSrc.getAttribute("class"));
@@ -95,7 +93,10 @@ function getSelectedSubject(){
 let correctAnswerJson = [];
 let js = '';
 function showQuestion(data){
-  
+    
+ // console.log();
+  numbers = `Question ${counter +1} of ${data[x].length}`;
+  console.log(numbers);
     if (counter >= data[x].length - 1) {
        
                counter = 0;
@@ -105,7 +106,7 @@ function showQuestion(data){
     let option = data[x][counter];
     correctAnswerJson = option.answer ;
 
-    console.log(question);
+     console.log(question);
    
     questionText.innerHTML = question;
     questionText.style.fontSize = "1.5em";
@@ -120,6 +121,8 @@ function showQuestion(data){
    
 
 }
+numberofQuestion.innerHTML = numbers;
+
 }
 
 
@@ -150,6 +153,7 @@ answerData.forEach(answers => {
 
 let correctAnswer = '';
 let checkAnswer = 0;
+
 function checkCorrectAnswer(){
 const progressBar = document.querySelector(".progress-bar");
 
