@@ -90,7 +90,7 @@ function getSelectedSubject(){
 }
 
 
-let correctAnswerJson = [];
+let correctAnswerJson = '';
 let js = '';
 function showQuestion(data){
     
@@ -142,7 +142,7 @@ fetch("questions.json")
 
 
 let answerData = document.querySelectorAll(".option-container");
-
+let clickedOnDivOnce = false;
 let getContainer = '';
 
 answerData.forEach(answers => {
@@ -154,40 +154,52 @@ answerData.forEach(answers => {
 let correctAnswer = '';
 let checkAnswer = 0;
 
-function checkCorrectAnswer(){
-const progressBar = document.querySelector(".progress-bar");
 
-    let answerAtt = this.querySelectorAll('li');
+
+let clickOnce = false;
+
+function checkCorrectAnswer(event){
+    if(!clickOnce){
+        console.log('clicked once');
+    const progressBar = document.querySelector(".progress-bar");
     
-    for(let i = 0; i < answerAtt.length;i++){
-        let p = answerAtt[i].getAttribute("data-answer");
+        let answerAtt = this.querySelectorAll('li');
         
-        let convertDataToNum = parseInt(p);
-        console.log(correctAnswerJson);
-        let currentWidth = parseInt(progressBar.style.width || 0);
-        let newWidth = currentWidth + 30;
-    if (convertDataToNum == correctAnswerJson) {
-       
-       this.style.border = '4px solid green';
-       this.style.boxShadow = '8px 8px 8px 2px solid green';
-
-       checkAnswer += 1;
-       correctAnswer = checkAnswer;
-       
-    if(progressBar.style.width !== 200 + "px"){
-       progressBar.style.width = newWidth + "px";
-       }
-    }
-
-    else{
-        console.log('incorrect');
-        this.style.border = '4px solid red';
-        
-    }
+        for(let i = 0; i < answerAtt.length;i++){
+            let p = answerAtt[i].getAttribute("data-answer");
+            
+            let convertDataToNum = parseInt(p);
+            console.log(correctAnswerJson);
+            let currentWidth = parseInt(progressBar.style.width || 0);
+            let newWidth = currentWidth + 30;
+        if (convertDataToNum == correctAnswerJson) {
+           
+           this.style.border = '4px solid green';
+           this.style.boxShadow = '8px 8px 8px 2px solid green';
+    
+           checkAnswer += 1;
+           correctAnswer = checkAnswer;
+           
+        if(progressBar.style.width !== 200 + "px"){
+           progressBar.style.width = newWidth + "px";
+           }
+        }
+    
+        else{
+            console.log('incorrect');
+            this.style.border = '4px solid red';
+            
+        }
+        }
+        clickOnce = true;
+    }else{
+        event.preventDefault();
+        event.stopPropagation();
+        console.log('clicking twice',this);
     }
     
-
-}
+    }
+    
 
 button.addEventListener("click",increase);
 
@@ -200,6 +212,8 @@ function increase(){
         answerData.forEach(div => {
             div.style.border = "";
         })
+       
+        clickOnce = false;
 }
 
 function showCorrectAnswers(){
